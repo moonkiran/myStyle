@@ -6,23 +6,124 @@
     <title>나의 미니 홈페이지</title>
 </head>
 <body>
-    <div>
+    <header>
         <h1>🙊문기란의 미니 홈페이지🙊</h1>
         <img src="https://sitem.ssgcdn.com/95/80/89/item/1000571898095_i1_750.jpg" alt="프로필 이미지" width="150" >
         <p>안녕하세요 저는 <strong>문기란</strong>이에요 <br>
         <em>지금은 열심히 학원을 다니고 있는 예비 <sup>웹 디자이너</sup>에요</em></p>
-    </div>
+    </header>
     <hr>
 
-    <div>
-        <h2>🗂️나의 작품 목록</h2>
+    <nav>
+        <!-- <h2>🗂️나의 작품 목록</h2>
         <ul>
             <li><a href="animal.html">🐈️동물 소개 페이지</a></li>
             <li><a href="book.html">📚︎나의 독서 목록</a></li>
             <li><a href="movie.html">🎥영화 리뷰 페이지</a></li>
             <li><a href="recipe.html">🍳나만의 레시피</a></li>
-        </ul>
+            같은 폴더 안에 있을때는 "파일이름"만 입력하면 됨
+        </ul> -->
+
+
+        <h2>🗂️작품 목록</h2>
+        <table border="1">
+            <caption><strong>HTML 실습 작품 모음</strong></caption>
+            <thead>
+                <tr>
+                    <th colspan="4">나의 HTML 작품 포트폴리오</th>
+                </tr>
+                <tr>
+                    <th>과정</th>
+                    <th>작품명</th>
+                    <th>설명</th>
+                    <th>링크</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">기초과정</td>
+                    <td>🐈️동물 소개</td>
+                    <td>좋아하는 동물 소개 페이지</td>
+                    <td><a href="animal.html">보기</a></td>
+                </tr>
+                <tr>
+                    <td>📚︎독서 목록</td>
+                    <td>나의 책 목록 페이지</td>
+                    <td><a href="book.html">보기</a></td>
+                </tr>
+                <tr>
+                    <td>🎥영화 리뷰</td>
+                    <td>영화 감상 리뷰 페이지</td>
+                    <td><a href="movie.html">보기</a></td>
+                </tr>
+                <tr>
+                    <td>🍳레시피</td>
+                    <td>나만의 레시피 페이지</td>
+                    <td><a href="recipe.html">보기</a></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">심화과정</td>
+                    <td>🕔︎<mark>시간표</mark></td>
+                    <td>rowspan/colspan 시간표</td>
+                    <td><a href="timetable.html">보기</a></td>
+                </tr>
+                <tr>
+                    <td>🎬️<mark>박스오피스</ㅡ></td>
+                    <td>영화 순위표 + tfoot</td>
+                    <td><a href="boxoffice.html">보기</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><b>총 작품수</b></td>
+                    <td><b>6개</b></td>
+                </tr>
+            </tfoot>
+        </table>
     </div>
+<hr>
+    <section>
+        <h2>💻배운 태그</h2>
+            <ul>
+                <li>텍스트: h1~h6, p, strong, em, mark</li>
+                <li>목록: ul, ol, li</li>
+                <li>링크/이미지: a, img</li>
+                <li><mark>표: table, thead, tbody, tfoot, tr, th, td, colspan, rowspan</mark></li>
+                <li>구조: div, span</li>
+            </ul>
+    </section>
+<hr>
+    <section>
+        <h2>🔗유용한 링크</h2>
+        <ol>
+            <li><a href="https://developer.mozilla.org/ko/docs/Web/HTML" target="_blank">MDN Web Docs — HTML 공식 문서</a></li>
+            <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools — HTML 튜토리얼</a></li>
+            <li><a href="https://caniuse.com/" target="_blank"">Can I Use — 브라우저 호환성 확인</a></li>
+        </ol>
+    </section>
+<hr>
+
+    <section>
+        <h2>방문자 메모</h2>
+        <form action="">
+            <label for="">이름</label><br>
+            <input type="text" placeholder="이름을 입력하세요"><br>
+            <label for="">방문 경로</label><br>
+            <select name="" id="">
+                <option value="">직접 방문</option>
+                <option value="">검색</option>
+                <option value="">추천</option>
+            </select><br>
+            <label for="">메모</label><br>
+            <textarea name="" id="" placeholder="방문 소감을 작성해주세요😀!" cols="40" rows="4"></textarea><br>
+            <button>✉메모남기기</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>문기란 . 웹디자이너 양성 과정 . 2026년</p>
+        <small> &copy; 2026 문기란. All right reserved. </small>
+    </footer>
 
 </body>
 </html>
